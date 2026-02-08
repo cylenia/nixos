@@ -10,6 +10,7 @@
     };
     settings = {
       single_window_margin_width = 2;
+      confirm_os_window_close = 0;
     };
   };
 }
