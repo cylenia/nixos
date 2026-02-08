@@ -2,6 +2,7 @@
   hm.programs.kitty = {
     enable = true;
     themeFile = "Catppuccin-Mocha";
+    shellIntegration.enableBashIntegration = true;
     font = {
       name = "Hack Nerd Font Mono";
       package = pkgs.nerd-fonts.hack;
