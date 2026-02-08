@@ -25,15 +25,15 @@
         "SUPER, V, exec, bash -c 'cliphist list | fuzzel --dmenu --with-nth 2 | cliphist decode | wl-copy'"
         "SUPER, Q, killactive"
 
-        "SUPER, Left, movefocus, left"
-        "SUPER, Right, movefocus, right"
-        "SUPER, Down, movefocus, down"
-        "SUPER, Up, movefocus, up"
+        "SUPER, Left, movefocus, l"
+        "SUPER, Right, movefocus, r"
+        "SUPER, Down, movefocus, d"
+        "SUPER, Up, movefocus, u"
 
-        "SUPER CTRL, Left, movewindow, left"
-        "SUPER CTRL, Right, movewindow, right"
-        "SUPER CTRL, Down, movewindow, down"
-        "SUPER CTRL, Up, movewindow, up"
+        "SUPER CTRL, Left, movewindow, l"
+        "SUPER CTRL, Right, movewindow, r"
+        "SUPER CTRL, Down, movewindow, d"
+        "SUPER CTRL, Up, movewindow, u"
 
         "SUPER, 1, workspace, 1"
         "SUPER, 2, workspace, 2"
