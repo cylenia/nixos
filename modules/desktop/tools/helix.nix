@@ -35,6 +35,15 @@
   hm.home.packages = [
     pkgs.dprint
   ];
+
+  hm.programs.nvf = {
+    enable = true;
+    settings = {
+      vim.lsp = {
+        enable = true;
+      };
+    };
+  };
   
   hm.home.file.dprint_config = {
     executable = true;

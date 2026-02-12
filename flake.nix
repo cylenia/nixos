@@ -39,6 +39,7 @@
               inputs.nixcraft.homeModules.default
               inputs.arkenfox-nixos.hmModules.arkenfox
               inputs.textfox.homeManagerModules.default
+              inputs.nvf.homeManagerModules.default
             ];
           };
         }
