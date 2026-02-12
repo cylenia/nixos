@@ -14,10 +14,6 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixcraft = {
-      url = "github:loystonpais/nixcraft";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = { nixpkgs, home-manager, sops-nix, ... }@inputs: {
@@ -32,7 +28,6 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             sharedModules = [
-              inputs.nixcraft.homeModules.default
               inputs.arkenfox-nixos.hmModules.arkenfox
               inputs.textfox.homeManagerModules.default
             ];

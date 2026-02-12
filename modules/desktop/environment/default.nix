@@ -10,13 +10,7 @@
     ./quickshell
   ];
 
-  environment.systemPackages = [
-    pkgs.nerd-fonts.hack
-    pkgs.xwayland-xwayland-satellite
-  ];
-
-  programs.niri.enable = true;
-
+  environment.systemPackages = [ pkgs.nerd-fonts.hack ];
 
   hm.home.pointerCursor = {
     gtk.enable = true;

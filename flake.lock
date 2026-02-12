@@ -79,27 +79,6 @@
         "type": "github"
       }
     },
-    "flake-parts": {
-      "inputs": {
-        "nixpkgs-lib": [
-          "nixcraft",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1765835352,
-        "narHash": "sha256-XswHlK/Qtjasvhd1nOa1e8MgZ8GS//jBoTqWtrS1Giw=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "a34fae9c08a15ad73f295041fec82323541400a9",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "type": "github"
-      }
-    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
@@ -140,27 +119,6 @@
         "owner": "nix-community",
         "ref": "master",
         "repo": "home-manager",
-        "type": "github"
-      }
-    },
-    "nixcraft": {
-      "inputs": {
-        "flake-parts": "flake-parts",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1770859285,
-        "narHash": "sha256-aTN5grjSzEOlftpXN/4Qlitxt5cYTOih+CMLIll8Jzc=",
-        "owner": "loystonpais",
-        "repo": "nixcraft",
-        "rev": "2f7f7016b17e529a26ce62b55a557428480b8bde",
-        "type": "github"
-      },
-      "original": {
-        "owner": "loystonpais",
-        "repo": "nixcraft",
         "type": "github"
       }
     },
@@ -258,7 +216,6 @@
         "arkenfox-nixos": "arkenfox-nixos",
         "firefox-addons": "firefox-addons",
         "home-manager": "home-manager",
-        "nixcraft": "nixcraft",
         "nixpkgs": "nixpkgs_3",
         "sops-nix": "sops-nix",
         "textfox": "textfox"
