@@ -24,6 +24,7 @@
       format = lib.concatStrings [
         " "
         "$directory"
+        "$nix_shell"
         "[>](bold #cba6f7)"
         " "
       ];
@@ -32,6 +33,10 @@
         truncate_to_repo = false;
         truncation_length = 1337;
         read_only = " *RO*";
+      };
+      nix_shell = {
+        style = "bold #cba6f7";
+        symbol = "nix-shell ";
       };
     };
   };
