@@ -4,7 +4,7 @@
     ./ssh.nix
     ./helix.nix
     ./neomutt.nix
-    ./fastfetch
+    ./fastfetch.nix
   ];
   
   hm.home.packages = with pkgs; [

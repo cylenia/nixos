@@ -8,14 +8,7 @@
     enable = true;
     settings = {
       logo = {
-        source = "~/.config/fastfetch/ascii.txt";
-        padding = {
-          top = 1;
-          right = 5;
-        };
-        color = {
-          "1" = "#cba6f7";
-        };
+        type = "none";
       };
       display ={
         separator = " -> ";
