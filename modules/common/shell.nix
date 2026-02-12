@@ -22,7 +22,6 @@
     settings = {
       add_newline = false;
       format = lib.concatStrings [
-        " "
         "$directory"
         "$nix_shell"
         "[>](bold #cba6f7)"
