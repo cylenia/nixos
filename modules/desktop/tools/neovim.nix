@@ -18,6 +18,7 @@
         };
         lsp.enable = true;
         git.enable = true;
+        statusline.lualine.enable = true;
       };
     };
   };
