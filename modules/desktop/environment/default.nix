@@ -5,16 +5,17 @@
     ./greetd.nix
     ./kitty.nix
     ./mako.nix
-    ./hyprland.nix
+    ./niri.nix
     ./fuzzel.nix
     ./quickshell
   ];
 
   environment.systemPackages = [
     pkgs.nerd-fonts.hack
+    pkgs.xwayland-xwayland-satellite
   ];
 
-  programs.hyprland.enable = true;
+  programs.niri.enable = true;
 
 
   hm.home.pointerCursor = {
