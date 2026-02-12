@@ -18,10 +18,6 @@
       url = "github:loystonpais/nixcraft";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nvf = {
-      url = "github:NotAShelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = { nixpkgs, home-manager, sops-nix, ... }@inputs: {
@@ -39,7 +35,6 @@
               inputs.nixcraft.homeModules.default
               inputs.arkenfox-nixos.hmModules.arkenfox
               inputs.textfox.homeManagerModules.default
-              inputs.nvf.homeManagerModules.default
             ];
           };
         }

@@ -2,7 +2,7 @@
   imports = [
     ./git.nix
     ./ssh.nix
-    ./neovim.nix
+    ./helix.nix
     ./neomutt.nix
     ./fastfetch
   ];
