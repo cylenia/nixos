@@ -1,6 +1,6 @@
 { ... }: {
   services.searx = {
-    enabled = true;
+    enable = true;
     domain = "search.cylenia.dev";
     settings = {
       search.formats = [ "html" "json" ];
