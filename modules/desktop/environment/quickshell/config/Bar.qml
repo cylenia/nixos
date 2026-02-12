@@ -29,7 +29,9 @@ Scope {
 
       Text {
         anchors.verticalCenterOffset: -1
-        anchors.centerIn: parent
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.left: parent.left
+        anchors.leftMargin: 1
         text: Clock.time
         color: "#cba6f7"
         font.family: "Hack Nerd Font Mono"
@@ -38,7 +40,9 @@ Scope {
 
       Text {
         anchors.verticalCenterOffset: -1
-        anchors.centerIn: parent
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.right: parent.right
+        anchors.rightMargin: 1
         text: Battery.battery
         color: "#cba6f7"
         font.family: "Hack Nerd Font Mono"
