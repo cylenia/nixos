@@ -1,9 +1,4 @@
 { ... }: {
-  hm.home.file.ascii = {
-    target = ".config/fastfetch/ascii.txt";
-    source = ./ascii.txt;
-  };
-  
   hm.programs.fastfetch = {
     enable = true;
     settings = {
