@@ -35,6 +35,7 @@
         read_only = " *RO*";
       };
       nix_shell = {
+        format = "[via $symbol$state]($style) ";
         style = "bold #cba6f7";
         symbol = "nix-shell ";
       };
