@@ -15,6 +15,7 @@
     pulsemixer
     bluetui
     sops
+    krita
     tealdeer
     jq
   ];
