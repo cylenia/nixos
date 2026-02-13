@@ -52,6 +52,11 @@
         }
       }
 
+      cursor {
+        xcursor-theme "catppuccin-mocha-mauve-cursors"
+        xcursor-size 16
+      }
+
       spawn-at-startup "quickshell"
       spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
       spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
