@@ -54,7 +54,7 @@
 
       cursor {
         xcursor-theme "catppuccin-mocha-mauve-cursors"
-        xcursor-size 16
+        xcursor-size 24
       }
 
       spawn-at-startup "quickshell"
