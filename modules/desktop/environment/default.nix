@@ -15,7 +15,7 @@
   hm.home.pointerCursor = {
     gtk.enable = true;
     package = pkgs.catppuccin-cursors.mochaMauve;
-    name = "Catppuccin Mocha Mauve Cursors";
+    name = "catppuccin-mocha-mauve-cursors";
     size = 16;
   };
 
