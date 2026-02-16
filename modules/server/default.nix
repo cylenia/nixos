@@ -2,7 +2,7 @@
   imports = [
     ./caddy.nix
     ./immich.nix
-    ./newt.nix
+    ./cloudflare.nix
     ./openssh.nix
     ./vaultwarden.nix    
     ./searx.nix
