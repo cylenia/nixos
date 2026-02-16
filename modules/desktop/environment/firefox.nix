@@ -76,7 +76,6 @@
           bitwarden
           ublock-origin
           catppuccin-mocha-mauve
-          skip-redirect
         ];
       };
       settings."extensions.activeThemeID" = "{76aabc99-c1a8-4c1e-832b-d4f2941d5a7a}"; # catpuccin-mocha-mauve
