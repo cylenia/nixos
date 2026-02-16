@@ -6,8 +6,6 @@
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
     textfox.url = "github:adriankarlen/textfox";
     arkenfox-nixos.url = "github:dwarfmaster/arkenfox-nixos";
-    astal.url = "github:aylur/astal";
-    ags.url = "github:aylur/ags"; 
     sops-nix = {
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +30,6 @@
             sharedModules = [
               inputs.arkenfox-nixos.hmModules.arkenfox
               inputs.textfox.homeManagerModules.default
-              inputs.ags.homeManagerModules.default
             ];
           };
         }

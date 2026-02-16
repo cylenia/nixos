@@ -7,7 +7,7 @@
     ./mako.nix
     ./niri.nix
     ./fuzzel.nix
-    ./ags
+    ./quickshell
   ];
 
   environment.systemPackages = [ pkgs.nerd-fonts.hack ];
