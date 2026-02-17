@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   imports = [
-    ./caddy.nix
+    ./bio.nix
     ./immich.nix
     ./cloudflare.nix
     ./openssh.nix

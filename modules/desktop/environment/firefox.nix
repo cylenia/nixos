@@ -48,7 +48,7 @@
     languagePacks = [ "en-GB" ];
     arkenfox = {
       enable = true;
-      version = "master";
+      version = "140.1";
     };
     policies = {
       Cookies = {
