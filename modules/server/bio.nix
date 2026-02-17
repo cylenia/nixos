@@ -4,6 +4,7 @@ let
     owner = "cylenia-xd";
     repo = "bio";
     rev = "2587974025f2c7541d5042d06a8cbeb5ab475572";
+    hash = "sha256-+begd+rUslDFLAtT+zotHoRJOY6xNjNVhEO8zyriX1o=";
   }) {};
 in {
   systemd.services.bio = {
