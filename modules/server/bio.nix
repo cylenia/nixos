@@ -3,8 +3,7 @@ let
   bioSite = pkgs.callPackage (pkgs.fetchFromGitHub {
     owner = "cylenia-xd";
     repo = "bio";
-    rev = "7abb3a72506777e31a017fc290c3b749288c76fe";
-    hash = "sha256-tdTD8RgafiWaTqRNc46Pr2FreLJi0QzONJ1BgW0ap0s=";
+    rev = "6dc313edc2dcea3ac9c7a65c84c4dd1139ed083c";
   }) {};
 in {
   systemd.services.bio = {
