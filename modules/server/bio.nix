@@ -3,7 +3,7 @@ let
   bioSite = pkgs.callPackage (pkgs.fetchFromGitHub {
     owner = "cylenia-xd";
     repo = "bio";
-    rev = "d1504ac88db272dc530c90c06a6acb60c7053ad6";
+    rev = "2587974025f2c7541d5042d06a8cbeb5ab475572";
     hash = "sha256-Mn34hPsc6hlY66hhkDnXDcyj+HFM5MFJkp0ETsusvBQ=";
   }) {};
 in {
