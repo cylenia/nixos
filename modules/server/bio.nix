@@ -3,8 +3,7 @@ let
   bioSite = pkgs.callPackage (pkgs.fetchFromGitHub {
     owner = "cylenia-xd";
     repo = "bio";
-    rev = "2587974025f2c7541d5042d06a8cbeb5ab475572";
-    hash = "sha256-+begd+rUslDFLAtT+zotHoRJOY6xNjNVhEO8zyriX1o=";
+    rev = "24183a99e9df65ab47616b510b0f95a215465d78";
   }) {};
 in {
   systemd.services.bio = {
@@ -14,9 +13,9 @@ in {
     environment.PORT = "8068";
 
     serviceConfig = {
-      ExecStart = "${pkgs.bun}/bin/bun run ${bioSite}/index.js";
+      ExecStart = "${pkgs.bun}/bin/bun ${bioSite}/index.js";
       Restart = "always";
-      WorkingDirectory = bioSite;
+      WorkingDirectory = "/";
     };
   };
 }
