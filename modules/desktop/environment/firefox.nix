@@ -45,11 +45,8 @@
   
   hm.programs.firefox = {
     enable = true;
+    package = pkgs.librewolf;
     languagePacks = [ "en-GB" ];
-    arkenfox = {
-      enable = true;
-      version = "140.1";
-    };
     policies = {
       Cookies = {
         Allow = [
@@ -62,14 +59,6 @@
       id = 0;
       isDefault = true;
       name = "default";
-      arkenfox = {
-        enable = true;
-        enableAllSections = true;
-        "0700"."0712"."network.trr.uri".value = "https://dns.quad9.net/dns-query";
-        "0700"."0712"."network.trr.custom_uri".value = "https://dns.quad9.net/dns-query";
-        "0800"."0830"."browser.search.separatePrivateDefault".value = false;
-        "0800"."0830"."browser.search.separatePrivateDefault.ui.enabled".value = false;
-      };
       extensions = {
         force = true;
         packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [

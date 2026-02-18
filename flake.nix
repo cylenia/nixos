@@ -5,7 +5,6 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
     textfox.url = "github:adriankarlen/textfox";
-    arkenfox-nixos.url = "github:dwarfmaster/arkenfox-nixos";
     sops-nix = {
       url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -28,7 +27,6 @@
             useGlobalPkgs = true;
             useUserPackages = true;
             sharedModules = [
-              inputs.arkenfox-nixos.hmModules.arkenfox
               inputs.textfox.homeManagerModules.default
             ];
           };
