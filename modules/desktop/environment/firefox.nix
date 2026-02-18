@@ -45,7 +45,6 @@
   
   hm.programs.firefox = {
     enable = true;
-    package = pkgs.librewolf;
     languagePacks = [ "en-GB" ];
     policies = {
       Cookies = {
