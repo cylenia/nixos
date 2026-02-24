@@ -16,6 +16,7 @@
     bluetui
     sops
     krita
+    ldns
     tealdeer
     jq
   ];
