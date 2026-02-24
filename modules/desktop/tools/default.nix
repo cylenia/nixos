@@ -17,6 +17,7 @@
     sops
     krita
     doggo
+    libqalculate
     tealdeer
     jq
   ];
