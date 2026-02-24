@@ -16,7 +16,7 @@
     bluetui
     sops
     krita
-    ldns
+    doggo
     tealdeer
     jq
   ];
