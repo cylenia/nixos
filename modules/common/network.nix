@@ -2,8 +2,7 @@
   networking.networkmanager.enable = true;
   networking.firewall.enable = false;
   networking.nameservers = [
-    "103.196.38.38"
-    "103.196.38.39"
-    "103.196.38.40"
+    "168.138.12.137"
+    "112.213.35.91"
   ];
 }
