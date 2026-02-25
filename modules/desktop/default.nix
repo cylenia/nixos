@@ -3,7 +3,7 @@
     ./audio.nix
     ./xdg.nix
     ./environment
-    ./tools
+    ./programs
   ];
 
   services.gnome.gnome-keyring.enable = true;

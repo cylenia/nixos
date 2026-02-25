@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   imports = [
     ./clipboard.nix
-    ./firefox.nix
     ./greetd.nix
     ./kitty.nix
     ./mako.nix
