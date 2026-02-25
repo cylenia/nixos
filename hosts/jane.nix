@@ -9,23 +9,29 @@
   networking.hostName = "jane";
   hardware.bluetooth.enable = true;
 
-  boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "nvme" "usb_storage" "usbhid" "sd_mod" "rtsx_pci_sdmmc" ];
   boot.kernelModules = [ "kvm-intel" ];
-  boot.initrd.luks.devices."cryptroot".device = "/dev/disk/by-uuid/671151a3-82f1-4946-940c-ae39ff3bbbbc";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 
   fileSystems."/" = {
-    device = "/dev/mapper/cryptroot";
-    fsType = "xfs";
+    device = "/dev/disk/by-uuid/a6503560-6734-453c-82a7-3cb42b2cc478";
+    fsType = "btrfs";
+    options = [ "subvol=@" ];
+  };
+
+  fileSystems."/home" = {
+    device = "/dev/disk/by-uuid/a6503560-6734-453c-82a7-3cb42b2cc478";
+    fsType = "btrfs";
+    options = [ "subvol=@home" ];
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/C90A-27F6";
+    device = "/dev/disk/by-uuid/DDFB-2A14";
     fsType = "vfat";
     options = [ "fmask=0077" "dmask=0077" ];
   };
   
-  swapDevices = [{ device = "/dev/disk/by-uuid/e92d5d4f-5932-4b1c-a8de-3b2089da8ab8"; }];
+  swapDevices = [{ device = "/dev/disk/by-uuid/69061212-53f2-4d70-836f-8dc5ba624ab1"; }];
 
   # don't change this!
   system.stateVersion = "25.11";
