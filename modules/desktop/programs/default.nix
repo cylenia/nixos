@@ -9,7 +9,8 @@
     ./steam.nix
   ];
   
-  hm.home.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
+    sgdboop
     netcat-openbsd
     android-tools
     prismlauncher
