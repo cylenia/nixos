@@ -6,6 +6,7 @@
     ./neomutt.nix
     ./fastfetch.nix
     ./firefox.nix
+    ./vesktop.nix
     ./steam.nix
   ];
   
