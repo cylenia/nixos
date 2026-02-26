@@ -4,7 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     firefox-addons.url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
-    textfox.url = "github:adriankarlen/textfox";
     
     sops-nix = {
       url = "github:Mic92/sops-nix";
