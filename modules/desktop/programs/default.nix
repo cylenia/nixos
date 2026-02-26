@@ -5,7 +5,6 @@
     ./helix.nix
     ./neomutt.nix
     ./fastfetch.nix
-    ./virtmanager.nix
     ./firefox.nix
     ./vesktop.nix
     ./steam.nix
