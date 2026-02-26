@@ -1,7 +1,6 @@
 { pkgs, inputs, ... }: {
-  hm.programs.firefox = {
+  hm.programs.librewolf = {
     enable = true;
-    languagePacks = [ "en-GB" ];
     profiles.default = {
       id = 0;
       isDefault = true;
