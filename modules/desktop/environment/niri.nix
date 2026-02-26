@@ -52,6 +52,11 @@
         }
       }
 
+      window-rule {
+        geometry-corner-radius 12
+        clip-to-geometry true
+      }
+      
       cursor {
         xcursor-theme "catppuccin-mocha-mauve-cursors"
         xcursor-size 24
