@@ -27,9 +27,6 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            sharedModules = [
-              inputs.textfox.homeManagerModules.default
-            ];
           };
         }
       ];
