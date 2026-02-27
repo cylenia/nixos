@@ -60,7 +60,6 @@
       spawn-at-startup "quickshell"
       spawn-sh-at-startup "wl-paste --type text --watch cliphist store"
       spawn-sh-at-startup "wl-paste --type image --watch cliphist store"
-      spawn-at-startup "mako"
 
       hotkey-overlay {
         skip-at-startup
