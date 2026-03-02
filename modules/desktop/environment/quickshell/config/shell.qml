@@ -2,6 +2,7 @@ import Quickshell
 import Quickshell.Services.Notifications
 
 import "bar"
+import "wallpaper"
 
 
 Scope {
