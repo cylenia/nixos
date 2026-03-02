@@ -8,7 +8,6 @@
     ./firefox.nix
     ./vesktop.nix
     ./steam.nix
-    ./distrobox.nix
   ];
   
   environment.systemPackages = with pkgs; [
