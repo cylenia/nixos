@@ -11,10 +11,12 @@ import QtQuick.Shapes
 Scope {
   id: root
 
- NotificationServer {
-   id: notificationServer
-   onNotification: notification => notification.tracked = true
- }
+  property var slideOutPanelEnabled: false  
+
+  NotificationServer {
+    id: notificationServer
+    onNotification: notification => notification.tracked = true
+  }
 
   Variants {
     model: Quickshell.screens
@@ -25,22 +27,13 @@ Scope {
       required property var modelData
       screen: modelData
 
-      color: "transparent"
-      implicitHeight: 30
+      color: "#1e1e2e"
+      implicitHeight: root.slideOutPanelEnabled ? 300 : 30
 
       anchors {
         top: true
         left: true
         right: true
-      }
-
-      Rectangle {
-        anchors.top: parent.top
-        anchors.left: parent.left
-        anchors.right: parent.right
-        width: parent.width
-        height: 30
-        color: "#1e1e2e"
       }
 
       Text {
@@ -52,6 +45,7 @@ Scope {
         color: "#cba6f7"
         font.family: "Hack Nerd Font Mono"
         font.pointSize: 12
+        visible: !root.slideOutPanelEnabled
       }
 
       Text {
@@ -63,6 +57,7 @@ Scope {
         color: "#cba6f7"
         font.family: "Hack Nerd Font Mono"
         font.pointSize: 12
+        visible: !root.slideOutPanelEnabled
       }
 
       Rectangle {
@@ -70,6 +65,12 @@ Scope {
         width: parent.width
         height: 2
         color: "#cba6f7"
+      }
+
+      IpcHandler {
+        target: "slideOut"
+
+        function toggle(): void { root.slideOutPanelEnabled = !root.slideOutPanelEnabled }
       }
 
       PopupWindow {
