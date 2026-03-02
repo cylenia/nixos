@@ -1,8 +1,8 @@
-{ ... }: {
+{ config, ... }: {
   services.librechat = {
     enable = true;
     enableLocalDB = true;
-    credentialsFile = "lorem ipsum";
+    credentialsFile = config.sops.secrets.librechat_env.path;
     env = {
       HOST = "0.0.0.0";
       PORT = "8068";
