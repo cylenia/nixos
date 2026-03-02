@@ -1,4 +1,5 @@
 { config, ... }: {
+  sops.secrets.librechat_env = {};
   services.librechat = {
     enable = true;
     enableLocalDB = true;
