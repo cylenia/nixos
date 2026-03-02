@@ -1,0 +1,66 @@
+import Quickshell
+import Quickshell.Services.Notifications
+import QtQuick
+
+import "../notifications"
+
+Scope {
+  id: root
+
+  required property NotificationServer notificationServerThing
+
+  Variants {
+    model: Quickshell.screens
+
+    PanelWindow {
+      id: panelBar
+      
+      required property var modelData
+      screen: modelData
+
+      color: "#1e1e2e"
+      implicitHeight: 30
+
+      anchors {
+        top: true
+        left: true
+        right: true
+      }
+
+      Text {
+        anchors.verticalCenterOffset: -1
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.left: parent.left
+        anchors.leftMargin: 10
+        text: Clock.time
+        color: "#cba6f7"
+        font.family: "Hack Nerd Font Mono"
+        font.pointSize: 12
+      }
+
+      Text {
+        anchors.verticalCenterOffset: -1
+        anchors.verticalCenter: parent.verticalCenter
+        anchors.right: parent.right
+        anchors.rightMargin: 10
+        text: Battery.battery
+        color: "#cba6f7"
+        font.family: "Hack Nerd Font Mono"
+        font.pointSize: 12
+      }
+
+      Rectangle {
+        anchors.bottom: parent.bottom
+        width: parent.width
+        height: 2
+        color: "#cba6f7"
+      }
+
+      Notifications {
+        panelWindow: panelBar
+        notificationServer: notificationServerThing
+        isVisible: true
+      }
+    }
+  }
+}
