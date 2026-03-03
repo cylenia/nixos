@@ -12,8 +12,14 @@
 
   qt = {
     enable = true;
-    style = "adwaita-dark";
-    platformTheme = "gtk2";
+    style = "kvantum";
+  };
+
+  hm.qt = {
+    enable = true;
+    style = {
+      name = "kvantum";
+    };
   };
 
   hm.home.pointerCursor = {
