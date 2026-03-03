@@ -8,7 +8,7 @@
     ./quickshell
   ];
 
-  environment.systemPackages = [ pkgs.nerd-fonts.hack ];
+  environment.systemPackages = [ pkgs.nerd-fonts.hack pkgs.catppuccin-kvantum ];
 
   qt = {
     enable = true;
