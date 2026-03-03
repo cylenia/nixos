@@ -29,8 +29,12 @@
     enable = true;
 
     theme = {
-      package = pkgs.magnetic-catppuccin-gtk;
       name = "Catppuccin-GTK-Dark";
+      package = (pkgs.magnetic-catppuccin-gtk.override {
+        accent = [ "mauve" ];
+        shade = "dark";
+        size = "compact";
+      });
     };
 
     iconTheme = {
