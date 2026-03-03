@@ -25,14 +25,11 @@ in {
   };
 
   hm.xdg.configFile = {
+    "Kvantum/catppuccin-${variant}-${accent}".source = "${kvantumThemePackage}/share/Kvantum/catppuccin-${variant}-${accent}";
     "Kvantum/kvantum.kvconfig".text = ''
       [General]
-      theme=Catppuccin-${variant}-${accent}
+      theme=catppuccin-${variant}-${accent}
     '';
-
-    # The important bit is here, links the theme directory from the package to a directory under `~/.config`
-    # where Kvantum should find it.
-    "Kvantum/Catppuccin-${variant}-${accent}".source = "${kvantumThemePackage}/share/Kvantum/Catppuccin-${variant}-${accent}";
   };
 
   hm.home.pointerCursor = {
