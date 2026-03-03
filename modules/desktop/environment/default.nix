@@ -24,7 +24,7 @@ in {
     style.name = "kvantum";
   };
 
-  xdg.configFile = {
+  hm.xdg.configFile = {
     "Kvantum/kvantum.kvconfig".text = ''
       [General]
       theme=Catppuccin-${variant}-${accent}
