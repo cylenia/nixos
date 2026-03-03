@@ -10,12 +10,10 @@
 
   environment.systemPackages = [ pkgs.nerd-fonts.hack ];
 
-  hm.qt = {
+  qt = {
     enable = true;
-    style = {
-      name = "adwaita-dark";
-      package = pkgs.adwaita-qt;
-    };
+    style = "adwaita-dark";
+    platformTheme = "gtk2";
   };
 
   hm.home.pointerCursor = {
