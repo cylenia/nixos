@@ -1,4 +1,12 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+
+let
+  variant = "Mocha";
+  accent = "Mauve";
+  kvantumThemePackage = pkgs.catppuccin-kvantum.override {
+    inherit variant accent;
+  };
+in {
   imports = [
     ./clipboard.nix
     ./greetd.nix
@@ -8,18 +16,23 @@
     ./quickshell
   ];
 
-  environment.systemPackages = [ pkgs.nerd-fonts.hack pkgs.catppuccin-kvantum ];
-
-  qt = {
-    enable = true;
-    style = "kvantum";
-  };
+  environment.systemPackages = [ pkgs.nerd-fonts.hack ];
 
   hm.qt = {
     enable = true;
-    style = {
-      name = "kvantum";
-    };
+    platformTheme.name = "qtct";
+    style.name = "kvantum";
+  };
+
+  xdg.configFile = {
+    "Kvantum/kvantum.kvconfig".text = ''
+      [General]
+      theme=Catppuccin-${variant}-${accent}
+    '';
+
+    # The important bit is here, links the theme directory from the package to a directory under `~/.config`
+    # where Kvantum should find it.
+    "Kvantum/Catppuccin-${variant}-${accent}".source = "${kvantumThemePackage}/share/Kvantum/Catppuccin-${variant}-${accent}";
   };
 
   hm.home.pointerCursor = {
