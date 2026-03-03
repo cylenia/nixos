@@ -10,6 +10,14 @@
 
   environment.systemPackages = [ pkgs.nerd-fonts.hack ];
 
+  hm.qt = {
+    enable = true;
+    style = {
+      name = "adwaita-dark";
+      package = pkgs.adwaita-qt;
+    };
+  };
+
   hm.home.pointerCursor = {
     gtk.enable = true;
     package = pkgs.catppuccin-cursors.mochaMauve;
@@ -21,8 +29,8 @@
     enable = true;
 
     theme = {
-      package = pkgs.flat-remix-gtk;
-      name = "Flat-Remix-GTK-Grey-Darkest";
+      package = pkgs.magnetic-catppuccin-gtk;
+      name = "Catppuccin-GTK-Dark";
     };
 
     iconTheme = {

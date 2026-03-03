@@ -11,7 +11,6 @@
   ];
   
   environment.systemPackages = with pkgs; [
-    sgdboop
     gamescope
     netcat-openbsd
     android-tools
