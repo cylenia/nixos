@@ -2,6 +2,7 @@
   imports = [
     ./audio.nix
     ./xdg.nix
+    ./virt.nix
     ./environment
     ./programs
   ];
