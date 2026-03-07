@@ -3,6 +3,7 @@ import Quickshell.Services.Notifications
 import QtQuick
 
 import "../notifications"
+import ".."
 
 Scope {
   id: root
@@ -34,7 +35,7 @@ Scope {
         anchors.leftMargin: 10
         text: Clock.time
         color: "#cba6f7"
-        font.family: "Inter"
+        font.family: Config.font
         font.pointSize: 12
       }
 
@@ -45,7 +46,7 @@ Scope {
         anchors.rightMargin: 10
         text: Battery.battery
         color: "#cba6f7"
-        font.family: "Inter"
+        font.family: Config.font
         font.pointSize: 12
       }
 

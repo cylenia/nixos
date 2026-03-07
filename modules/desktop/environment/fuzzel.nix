@@ -9,7 +9,7 @@
     settings = {
       main = {
         terminal = "${lib.getExe pkgs.kitty}";
-        font = "Inter:size=8";
+        font = "Hack Nerd Font Mono:size=8";
         icons-enabled = false;
         width = 100;
         horizontal-pad = 8;

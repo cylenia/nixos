@@ -3,6 +3,8 @@ import Quickshell.Services.Notifications
 import QtQuick
 import QtQuick.Layouts
 
+import ".."
+
 PopupWindow {
   id: notifications
 
@@ -47,7 +49,7 @@ PopupWindow {
           anchors.left: parent.left
           anchors.leftMargin: 10
           color: "#cba6f7"
-          font.family: "Inter"
+          font.family: Config.font
           font.pointSize: 12
           text: `${parent.modelData.appName} - ${parent.modelData.summary}\n\n${parent.modelData.body}`
         }

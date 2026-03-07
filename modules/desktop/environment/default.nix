@@ -16,7 +16,7 @@ in {
     ./quickshell
   ];
 
-  environment.systemPackages = [ pkgs.inter ];
+  environment.systemPackages = [ pkgs.nerd-fonts.hack ];
 
   hm.qt = {
     enable = true;
@@ -54,12 +54,6 @@ in {
     iconTheme = {
       package = pkgs.adwaita-icon-theme;
       name = "Adwaita";
-    };
-
-    font = {
-      package = pkgs.inter;
-      name = "Inter";
-      size = 12;
     };
   };
 }
