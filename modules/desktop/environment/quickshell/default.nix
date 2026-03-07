@@ -9,7 +9,6 @@
     pkgs.libnotify
   ];
 
-
   hm.home.file.quickshell = {
     enable = true;
     executable = true;

@@ -16,7 +16,7 @@ in {
     ./quickshell
   ];
 
-  environment.systemPackages = [ pkgs.nerd-fonts.hack ];
+  environment.systemPackages = [ pkgs.inter ];
 
   hm.qt = {
     enable = true;
@@ -57,8 +57,8 @@ in {
     };
 
     font = {
-      package = pkgs.nerd-fonts.hack;
-      name = "Hack Nerd Font Mono";
+      package = pkgs.inter;
+      name = "Inter";
       size = 12;
     };
   };

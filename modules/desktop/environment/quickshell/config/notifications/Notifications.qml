@@ -47,7 +47,7 @@ PopupWindow {
           anchors.left: parent.left
           anchors.leftMargin: 10
           color: "#cba6f7"
-          font.family: "Hack Nerd Font Mono"
+          font.family: "Inter"
           font.pointSize: 12
           text: `${parent.modelData.appName} - ${parent.modelData.summary}\n\n${parent.modelData.body}`
         }

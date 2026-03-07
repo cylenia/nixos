@@ -34,7 +34,7 @@ Scope {
         anchors.leftMargin: 10
         text: Clock.time
         color: "#cba6f7"
-        font.family: "Hack Nerd Font Mono"
+        font.family: "Inter"
         font.pointSize: 12
       }
 
@@ -45,7 +45,7 @@ Scope {
         anchors.rightMargin: 10
         text: Battery.battery
         color: "#cba6f7"
-        font.family: "Hack Nerd Font Mono"
+        font.family: "Inter"
         font.pointSize: 12
       }
 
