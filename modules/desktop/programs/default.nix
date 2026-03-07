@@ -21,6 +21,7 @@
     bluetui
     sops
     krita
+    inkscape
     doggo
     libqalculate
     tealdeer
