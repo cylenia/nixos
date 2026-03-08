@@ -16,6 +16,7 @@
     prismlauncher
     xdg-user-dirs
     p7zip
+    vesktop
     pulsemixer
     bluetui
     sops
