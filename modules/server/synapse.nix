@@ -3,7 +3,6 @@
   services.matrix-synapse = {
     enable = true;
     configureRedisLocally = true;
-    enableRegistrationScript = true;
     extraConfigFiles = [ config.sops.secrets.synapse_env.path ];
     settings = {
       turn_uris = [
@@ -11,6 +10,7 @@
         "turns:standard.relay.metered.ca:443?transport=tcp"
       ];
       turn_user_lifetime = "86400000";
+      enable_registration = true;
       max_upload_size = "2G";
       public_baseurl = "https://matrix.cylenia.dev/";
       server_name = "cylenia.dev";
