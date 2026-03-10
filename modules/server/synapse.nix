@@ -3,6 +3,7 @@
   services.matrix-synapse = {
     enable = true;
     configureRedisLocally = true;
+    enableRegistrationScript = true;
     extraConfigFiles = [ config.sops.secrets.synapse_env.path ];
     settings = {
       turn_uris = [
