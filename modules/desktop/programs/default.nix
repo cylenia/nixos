@@ -4,6 +4,7 @@
     ./ssh.nix
     ./helix.nix
     ./neomutt.nix
+    ./nheko.nix
     ./fastfetch.nix
     ./firefox.nix
     ./steam.nix
