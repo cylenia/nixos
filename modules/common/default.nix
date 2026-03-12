@@ -7,6 +7,7 @@
     ./nix.nix
     ./shell.nix
     ./sops.nix
+    ./other.nix
     ./users.nix
   ];
 }

@@ -1,3 +1,3 @@
 { ... }: {
-  security.sudo-rs.enable = true;
+  security.sudo.package = pkgs.sudo-rs;
 }
