@@ -4,6 +4,7 @@
     ./cloudflare.nix
     ./openssh.nix
     ./vaultwarden.nix    
+    ./homeassistant.nix
     ./searx.nix
   ];
 
