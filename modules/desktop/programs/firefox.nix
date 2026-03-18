@@ -25,7 +25,6 @@
       tabs = {
         horizontal.enable = true;
         vertical.enable = true;
-        vertical.sidebery.margin = "1.0rem";
       };
       navbar = {
         margin = "8px 8px 2px";
