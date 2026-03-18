@@ -10,6 +10,7 @@
   ];
   
   environment.systemPackages = with pkgs; [
+    kdePackages.kmail
     gamescope
     netcat-openbsd
     android-tools
