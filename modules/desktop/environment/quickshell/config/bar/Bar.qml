@@ -36,7 +36,7 @@ Scope {
         text: Clock.time
         color: "#cba6f7"
         font.family: Config.font
-        font.pointSize: 12
+        font.pointSize: 10
       }
 
       Text {
@@ -46,7 +46,7 @@ Scope {
         text: Media.media
         color: "#cba6f7"
         font.family: Config.font
-        font.pointSize: 12
+        font.pointSize: 10
       }
 
       Text {
@@ -57,7 +57,7 @@ Scope {
         text: Battery.battery
         color: "#cba6f7"
         font.family: Config.font
-        font.pointSize: 12
+        font.pointSize: 10
       }
 
       Rectangle {
