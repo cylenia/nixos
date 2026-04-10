@@ -42,6 +42,16 @@ Scope {
       Text {
         anchors.verticalCenterOffset: -1
         anchors.verticalCenter: parent.verticalCenter
+        anchors.horizontalCenter: parent.horizontalCenter
+        text: Media.media
+        color: "#cba6f7"
+        font.family: Config.font
+        font.pointSize: 12
+      }
+
+      Text {
+        anchors.verticalCenterOffset: -1
+        anchors.verticalCenter: parent.verticalCenter
         anchors.right: parent.right
         anchors.rightMargin: 10
         text: Battery.battery
