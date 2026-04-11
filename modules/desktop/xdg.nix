@@ -5,7 +5,7 @@
     desktop = "/home/cylenia/.hiddenxdg/desktop";
     documents = "/home/cylenia/documents";
     download = "/home/cylenia/downloads";
-    music = "/home/cylenia/.hiddenxdg/music";
+    music = "/home/cylenia/media/music";
     pictures = "/home/cylenia/media/pictures";
     publicShare = "/home/cylenia/.hiddenxdg/public";
     templates = "/home/cylenia/.hiddenxdg/templates";
