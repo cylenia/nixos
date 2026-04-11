@@ -27,6 +27,7 @@
     inkscape
     doggo
     libqalculate
+    qbittorrent
     tealdeer
     jq
   ];
