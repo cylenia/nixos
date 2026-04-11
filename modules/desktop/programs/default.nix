@@ -7,11 +7,13 @@
     ./fastfetch.nix
     ./firefox.nix
     ./steam.nix
+    ./mpd.nix
   ];
   
   environment.systemPackages = with pkgs; [
     gamescope
     godot
+    files
     netcat-openbsd
     android-tools
     prismlauncher
