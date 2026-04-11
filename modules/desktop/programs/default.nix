@@ -13,7 +13,7 @@
   environment.systemPackages = with pkgs; [
     gamescope
     godot
-    files
+    file
     netcat-openbsd
     android-tools
     prismlauncher
