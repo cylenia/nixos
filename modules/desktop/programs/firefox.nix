@@ -68,7 +68,7 @@
       settings."extensions.activeThemeID" = "{76aabc99-c1a8-4c1e-832b-d4f2941d5a7a}"; # catpuccin-mocha-mauve
       search = {
         force = true;
-        default = "searxng";
+        default = "ddg-no-ai";
         engines = {
           bing.metaData.hidden = true;
           perplexity.metaData.hidden = true;
