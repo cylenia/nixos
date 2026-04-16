@@ -23,7 +23,6 @@
     options = [ "fmask=0077" "dmask=0077" ];
   };
 
-  # don't change this!
   system.stateVersion = "25.11";
-  hm.home.stateVersion = "25.11";
+  hm.home.stateVersion = "26.05";
 }
