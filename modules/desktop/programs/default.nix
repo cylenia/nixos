@@ -11,6 +11,7 @@
   ];
   
   environment.systemPackages = with pkgs; [
+    stoat-desktop
     gamescope
     godot
     file
